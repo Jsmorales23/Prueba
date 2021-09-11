@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PruebaTecnica</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="prueba.css">
+</head>
+<body>
+    <header>
+    <div class="baner-principal">
+        <div>
+            <img class="logo" src="imagenes/logo.png" alt="">
+        </div>
+    
+        <div class="menu">
+            <nav>
+                <ul class="menu-varios">
+                    <li class="all"> <a href="">All</a></li>
+                    <li class="Brading"><a href="">Brading</a></li>
+                    <li class="Web"><a href="">Web</a></li>
+                    <li class="Potography"><a href="">Potography</a></li>
+                    <li class="App"><a href="">App</a></li>
+                </ul>
+            </nav>
+            
+        </div>
+        <div>
+            <img class="lupa" src="imagenes/lupa.jpg" alt="">
+        </div>
+        
+        <nav class="respmenu">
+            <input type="checkbox" id="respmenu">
+            <label for="respmenu"> ☰ </label>
+            <ul>
+                <li class="all"> <a href="">All</a></li>
+                <li class="Brading"><a href="">Brading</a></li>
+                <li class="Web"><a href="">Web</a></li>
+                <li class="Potography"><a href="">Potography</a></li>
+                <li class="App"><a href="">App</a></li>
+            </ul>
+          </nav>
+
+
+
+
+    </div>
+
+    </header>
+    <section class="baner-secundario">
+        <div class="baner-secundario1">
+            <h1>EXPLORE BEYOND HORIZON</h1>
+            <h2>Magna mundi referrentur quo, no rebum dignissim qui.</h2>
+            <h2>Per quodsi accusata id, agam labores.</h2>
+            <button class="boton">VIEW OUR WORK</button>
+        </div>
+    </section>
+
+    <section class="menu2">
+        <div class="menu2-varios">
+            <div class="iconos">
+                <img src="imagenes/menu (2).png" alt="">
+                <img src="imagenes/menlineas.png" alt="">
+            </div>
+            <div class="menu2">
+                <nav>
+                    <ul class="menu-varios2">
+                        <li class="all"> <a href="">All</a></li>
+                        <li class="Brading"><a href="">Brading</a></li>
+                        <li class="Web"><a href="">Web</a></li>
+                        <li class="Potography"><a href="">Potography</a></li>
+                        <li class="App"><a href="">App</a></li>
+                    </ul>
+                </nav>
+                
+            </div>
+        </div>
+
+    </section>
+    
+
+    <div id="imagenesjson" class="section-imagenes">
+    </div>
+    
+    
+    <footer class="footer">
+        <button class="boton2">Show Me More</button>
+        <div class="footer1">© 2016 - <span>Sneak</span> All Right Reserved</div>
+        <div class="iconos-redes">
+            <img src="imagenes/facebook.png" alt="">
+            <img src="imagenes/Tweeter.png" alt="">
+            <img src="imagenes/dribble.png" alt="">
+            <img src="imagenes/google.png" alt="">
+            <img src="imagenes/youtube.png" alt="">
+        </div>
+    </footer>
+
+   
+    <script src="Prueba.json"></script>
+    <script>
+       
+
+            let respuesta = document.querySelector(".section-imagenes");
+            
+
+            for (let item of imagenes){
+                
+                respuesta.innerHTML += `
+                <div class="box"><img id="" src="${item.url}" alt=""></div>
+                `
+            }
+        
+    </script>
+    
+</body>
+</html>
